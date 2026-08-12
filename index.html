@@ -1,2 +1,67 @@
-under maintenance
-- Xez
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xez IP & Device Tracker</title>
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-effects">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+    </div>
+
+    <main class="container">
+        <header>
+            <div class="logo-container">
+                <div class="pulse-ring"></div>
+                <div class="logo-icon">📡</div>
+            </div>
+            <h1>SYSTEM <span class="highlight">TRACKER</span></h1>
+            <p>Analyzing your connection details...</p>
+        </header>
+
+        <section class="card-glass" id="data-container">
+            <div class="loading-state" id="loading">
+                <div class="spinner"></div>
+                <p>Decrypting network information...</p>
+            </div>
+
+            <div class="data-grid hidden" id="result">
+                <div class="data-item">
+                    <span class="label">IP Address</span>
+                    <span class="value highlight-text" id="ip-val">...</span>
+                </div>
+                <div class="data-item">
+                    <span class="label">ISP / Provider</span>
+                    <span class="value" id="isp-val">...</span>
+                </div>
+                <div class="data-item">
+                    <span class="label">Location</span>
+                    <span class="value" id="loc-val">...</span>
+                </div>
+                <div class="data-item">
+                    <span class="label">Coordinates</span>
+                    <span class="value" id="coord-val">...</span>
+                </div>
+                <div class="data-item">
+                    <span class="label">Timezone</span>
+                    <span class="value" id="tz-val">...</span>
+                </div>
+                <div class="data-item full-width">
+                    <span class="label">Device & Browser</span>
+                    <span class="value small-text" id="ua-val">...</span>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>Protected by Xez Infrastructure | 2026</p>
+        </footer>
+    </main>
+
+    <script src="/script.js"></script>
+</body>
+</html>
